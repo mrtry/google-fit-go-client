@@ -24,6 +24,9 @@ Body Temperature: 35.599998
 - Google Fitに「歩数」「睡眠時間」「体重」「安静時心拍数」「体温」を入れておく
 - [コードの日付指定箇所](https://github.com/mrtry/google-fit-go-client/blob/main/main.go#L37)を変更して、Google Fitにデータが入ってる日付を指定する
 - GCP上でFitness APIを有効にし、OAuth Clientを作っておく
+  - OAuth同意画面の設定で、 `機密性の高いスコープ` に `fitness.*.read` のスコープを追加しておく
+  - <img src="https://user-images.githubusercontent.com/8851552/159828532-6309efa4-a952-4794-98aa-4c9162153c29.png" width="50%" />
+ 
 - `.env` を作成し、以下の項目を埋める
 
 ```
